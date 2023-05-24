@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.card-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100vh;
+  flex-wrap: wrap;
+
+}
+.small-wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.card {
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  transition: opacity 0.3s;
+  opacity: 1;
+  margin: 10px;
+}
+
+.card:hover {
+  opacity: .4;
+  cursor: pointer;
+}
+.card:hover .fa-link{
+  display: block;
+  
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+.card-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff ;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.fa-link {
+  font-size: inherit;
+  display: none;
+}
+
+.card1 {
+  background-image: url('https://sciencelib.ge/wordpress/wp-content/uploads/2023/04/imgbook.jpeg');
+}
+
+.card2 {
+  background-image: url('https://sciencelib.ge/wordpress/wp-content/uploads/2023/05/2.jpeg');
+}
+
+.card3 {
+  background-image: url('https://sciencelib.ge/wordpress/wp-content/uploads/2023/05/5.jpeg');
+}
+
+.card4 {
+  background-image: url('https://sciencelib.ge/wordpress/wp-content/uploads/2023/05/1.jpeg');
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 98%;
+    height: 300px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+}
+ </style>
+
+
+
+<div class="card-section">
+    <div class="small-wrap">
+        <div class="card card1">
+            <div class="card-content">
+                <h3>ბიბლიოთეკის შენობები</h3>
+                <a href="#" class="card-link"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="card-content">
+                <h3>ღონისძიების სურათები</h3>
+                <a href="#" class="card-link"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="small-wrap">
+        <div class="card card3">
+            <div class="card-content">
+                <h3>გრიშაშვილის სახლ-მუზეუმი</h3>
+                <a href="#" class="card-link"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+        <div class="card card4">
+            <div class="card-content">
+                <h3>რარიტეტული წიგნები</h3>
+                <a href="#" class="card-link"><i class="fas fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
